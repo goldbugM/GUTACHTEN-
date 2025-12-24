@@ -11,3 +11,28 @@
  ✓ Compiled in 848ms (610 modules)
  ✓ Compiled in 1191ms (1214 modules)
  ✓ Compiled in 1257ms (616 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s (600 modules)
+ ⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js
+    at t5 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:2165)
+    at /app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:21810
+    at /app/node_modules/next/dist/server/lib/trace/tracer.js:184:62
+    at /app/node_modules/next/dist/server/lib/trace/tracer.js:133:36
+    at NoopContextManager.with (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /app/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+    at NoopContextManager.with (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/app/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NextTracerImpl.trace (/app/node_modules/next/dist/server/lib/trace/tracer.js:122:28)
+    at /app/node_modules/next/dist/server/lib/trace/tracer.js:184:31
+    at rk (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:26357)
+    at async doRender (/app/node_modules/next/dist/server/base-server.js:1394:30)
+    at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1555:28) {
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.2s (1365 modules)
+ ○ Compiling /not-found ...
+ ✓ Compiled /not-found in 1077ms (1370 modules)
